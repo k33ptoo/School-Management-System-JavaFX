@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutY="-2.0" prefHeight="139.0" prefWidth="950.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="-2.0">
+         <children>
+            <Label layoutX="73.0" layoutY="30.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="91.0" text="School Mangement " textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <HBox layoutX="42.0" layoutY="170.0" prefHeight="103.0" prefWidth="892.0" spacing="20.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="170.0">
+         <children>
+            <Pane prefHeight="103.0" prefWidth="200.0" style="-fx-background-color: #3A84C3;">
+               <children>
+                  <Label layoutX="52.0" layoutY="70.0" text="Total Students" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="62.0" layoutY="25.0" text="500" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="103.0" prefWidth="200.0" style="-fx-background-color: #EEAC4C;">
+               <children>
+                  <Label layoutX="67.0" layoutY="70.0" text="Total Hours" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="59.0" layoutY="25.0" text="1000" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="103.0" prefWidth="200.0" style="-fx-background-color: #5CB55B;">
+               <children>
+                  <Label layoutX="62.0" layoutY="70.0" text="Total Lessons" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="79.0" layoutY="25.0" text="10" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="103.0" prefWidth="200.0" style="-fx-background-color: #D7534E;">
+               <children>
+                  <Label layoutX="57.0" layoutY="70.0" text="Missed Classes" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="90.0" layoutY="25.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <SplitPane dividerPositions="0.6874279123414071" layoutX="42.0" layoutY="299.0" prefHeight="287.0" prefWidth="869.0" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="299.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="158.0" prefWidth="203.0">
+               <children>
+                  <TableView layoutY="-2.0" prefHeight="287.0" prefWidth="593.0" stylesheets="@table.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+                    <columns>
+                      <TableColumn prefWidth="150.0" text="Teacher's Name" />
+                      <TableColumn minWidth="0.0" prefWidth="0.0" text="Lesson" />
+                        <TableColumn prefWidth="150.0" text="Time" />
+                        <TableColumn minWidth="0.0" prefWidth="128.0" text="Attended" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="158.0" prefWidth="274.0">
+               <children>
+                  <PieChart layoutY="-3.0" prefHeight="287.0" prefWidth="278.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
