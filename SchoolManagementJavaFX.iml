@@ -7,7 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="fontawesomefx-8.8" level="project" />
-    <orderEntry type="library" name="com.calendarfx:view:8.4.2" level="project" />
+    <orderEntry type="library" name="org.jfxtras:jmetro:5.3" level="project" />
+    <orderEntry type="library" name="de.jensd:fontawesomefx:8.91" level="project" />
+    <orderEntry type="library" name="com.calendarfx:view:8.5.0" level="project" />
   </component>
 </module>
