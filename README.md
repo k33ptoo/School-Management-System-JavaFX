@@ -9,7 +9,10 @@ Previews
 
 ![](https://github.com/k33ptoo/School-Management-System-JavaFX/blob/master/screenshots/sc4.PNG)
 
-This project is purely **JavaFX** - it gives you a basis of what to do regarding your projects, **Note:** it is not a fully fledged system. Some of the things covered apart from UI design is
+This project is purely **JavaFX** - it gives you a basis of what to do regarding your projects,
+
+**Note:** 
+It is not a fully fledged system. Some of the things covered apart from UI design are:
 
   - Adding data to tableview
   - Setting Application Icon
