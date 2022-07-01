@@ -6,15 +6,20 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import jfxtras.styles.jmetro8.JMetro;
+
+import java.net.URL;
+//import jfxtras.styles.jmetro8.JMetro;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("fxml/Home.fxml"));
+        URL home = getClass().getResource("/fxml/Home.fxml");
+        assert home != null;
+        System.out.println(home);
+        Parent root = FXMLLoader.load(home);
         primaryStage.setTitle("KeepToo SMSys");
-        primaryStage.getIcons().add(new Image("/home/icons/icon.png"));
+        primaryStage.getIcons().add(new Image("/icons/icon.png"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
